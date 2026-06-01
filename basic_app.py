@@ -161,8 +161,8 @@ def main():
     number_of_humans = get_number_of_humans(total_players)
     player_labels = create_player_labels(mode, total_players, number_of_humans)
 
-    characters = load_csv("characters.csv")
-    rackets = load_csv("rackets.csv")
+    characters = load_csv("data/characters.csv")
+    rackets = load_csv("data/rackets.csv")
 
     while True:
         results = randomise_players(player_labels, characters, rackets)
